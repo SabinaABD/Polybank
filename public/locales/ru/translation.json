@@ -1,0 +1,16 @@
+{
+  "ad": {
+    "app": "Мобильное приложение",
+    "name": "Affinity Bank Online",
+    "subtitle": "Банк в вашем смартфоне",
+    "button-text": "Узнать больше"
+  },
+  "header": {
+    "places": "Банкоматы и отделения",
+    "exchange": "Курсы валют",
+    "contact": "Контакты"
+  },
+  "footer": {
+    "apps-title": "Скачать мобильный банк Affinity Online"
+  }
+}

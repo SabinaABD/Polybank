@@ -1,0 +1,53 @@
+$yellow: #FFD600;
+$black: #000;
+$white: #FFFFFF;
+
+@mixin background ($url) {
+  background-image: url($url);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.ad {
+  &-1 {
+    @include background('../images/homeBG.svg')
+  }
+  &-2 {
+    @include background('../images/secondScreen.svg')
+  }
+  &-3 {
+    @include background('../images/thirdScreen.svg')
+  }
+  &-4 {
+    @include background('../images/forthScreen.svg')
+  }
+  &-container {
+    color: $white;
+    button {
+      background-color: $yellow;
+      padding: 20px 45px;
+      font-size: 16px;
+      line-height: 16px;
+      cursor: pointer;
+    }
+  }
+  &-title {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 900;
+    margin-bottom: 60px;
+  }
+
+  &-subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+
+}

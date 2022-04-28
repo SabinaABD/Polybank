@@ -1,0 +1,86 @@
+@import "nullstyle";
+
+$yellow: #FFD600;
+$black: #000;
+$white: #FFFFFF;
+
+
+@mixin flexBox($gap, $direction: row, $align: center, $justify: space-between ) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+.home {
+  background-image: url('../images/homeBG.svg');
+  background-position: center;
+  background-size: cover;
+  padding: 0 75px;
+  color: $white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__header {
+    @include flexBox(0px);
+    padding: 24px 0;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &-logo {
+      @include flexBox(16px);
+      font-size: 24px;
+      line-height: 36px;
+      color: $yellow;
+    }
+
+    &-links {
+      @include flexBox(32px);
+      cursor: pointer;
+      &-item {
+        @include flexBox(8px);
+        color: $white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &-switch-btn {
+      button {
+        padding: 7px;
+        color: $white;
+        &.active {
+          background-color: $yellow;
+          color: $black;
+        }
+      }
+    }
+  }
+  &__content {
+    @include flexBox(0px,row, center, flex-end);
+    min-height: calc(100vh - 290px);
+
+    &-form {
+      background-color: $white;
+      color: $black;
+    }
+  }
+
+  &__footer {
+  @include flexBox(30%, row, center, flex-end);
+    margin-top: auto;
+    flex: 0 0 auto;
+    padding: 16px 0;
+    &-stores {
+      text-align: center;
+      color: $white;
+      &-btns {
+        @include flexBox(37px);
+        margin-top: 16px;
+      }
+    }
+  }
+}

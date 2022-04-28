@@ -1,0 +1,16 @@
+{
+  "ad": {
+    "app": "Mobile app",
+    "name": "Affinity Bank Online",
+    "subtitle": "Banking on your smartphone",
+    "button-text": "Learn more"
+  },
+  "header": {
+    "places": "Bank branches & ATM",
+    "exchange": "Exchange rate",
+    "contact": "Contact"
+  },
+  "footer": {
+    "apps-title": "Download mobile banking Affinity Online"
+  }
+}
